@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" type="image/png" href="../resource/icons/main.png">
+	<title>CURAR FORM</title>
+	<link rel="stylesheet" type="text/css" href="../css/reg.css">
+	<style> 
+        .foot{
+            display: block;
+            text-align: center;
+            }
+        .btn{
+            padding: 8px 20px;
+            font-family: Lora;
+            color: white;
+            background: none;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 17px;
+            transition: all .3s;
+        }
+        .btn:hover{
+            cursor: pointer;
+            background-color: rgba(0,0,0,.3);
+        }
+    </style>
+    <script>
+function red(e)
+    {
+       
+        window.location.href = 'aftersignup.html';
+    }
+    
+    document.getElementsByClassName("red").addEventListener('click',function(e){
+        e.preventDefault();
+        window.location.href = 'aftersignup.html';
+    });
+</script>
+</head>
+<body>
+	<form onSubmit="red(e)">
+		<table align="center" cellspacing="30">
+			
+			<th align="center" colspan="2">
+			<div class="reg-head">	Registration Form</div>
+			</th>
+			
+			<tr>
+				<td>
+					Name:-<td> <input type="text" name="n1" placeholder="Enter your name"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Email:-<td> <input type="email" name="n2" placeholder="Enter your email id"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Mobile Number:- <td><input type="number" name="n3" placeholder="Enter mobile number"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:- <td><input type="password" name="n4" placeholder="Enter your password"></td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Confirm Password:- <td><input type="password" name="n5" placeholder="Enter your password"></td>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2">
+                    <a href="aftersignup.html"><button class="btn red" onclick="red(e)">Join Us</button> <!--<input class="red" type="submit" value="Join Us">--></a>
+				</td>
+			</tr>
+            			
+		</table>
+	</form>
+ <!--   
+<?php
+mysql_connect("localhost","root","") or die("not connected");
+mysql_select_db("student") or die("no db found");
+  if(isset($_POST['submit']))
+  {
+
+ $name=$_POST['name'];
+  $email=$_POST['email'];
+   $mobile no=$_POST['mobile no'];
+ $query="insert into data(name,age,city) values('$name','$age','$city')";
+ if(mysql_query($query))
+ {
+
+ 	echo " ";
+ }
+
+  }
+
+?>-->
+	    <div class="foot"><a href="home.html"><img src="../resource/images/logoblack.png"></a></div>
+</body>
+
+</html>

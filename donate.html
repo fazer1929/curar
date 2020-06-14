@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donate</title>
+	<link rel="stylesheet" type="text/css" href="../html/donate.css">
+	<style>
+        body{
+            background-color: #2980b9;
+            font-family: Lora;
+            line-height: 140%;
+        }
+        input,textarea{
+            background:none;
+            border: none;
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 8px 20px;
+            margin-left: 20px;
+        }
+        input::placeholder,textarea::placeholder{
+            color:white;
+            
+            font-family: inherit;
+        }
+        input[type=text],textarea[type=text]{
+            color: white;
+        }
+        textarea{
+            margin-left: -3px;
+        }
+        select{
+            
+            background: none;
+            border: 1px solid black;
+            padding: 7px 20px;
+        }
+        .foot{
+            display: block;
+            text-align: center;
+            
+        }
+        option{
+            color: black;
+            background: none;
+        }
+        input[type=submit]{
+            padding:12px 40px;
+            color: white;
+            background: none;
+            border-radius: 10%;
+            transition: all .2s;
+            font-size: 17px;
+        }
+          input[type=submit]:hover{
+            background-color:darkslategrey;
+            
+        }
+
+         
+         
+    
+        h1{
+            font-size: 60px;
+            display: inline-block;
+            letter-spacing: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+
+<center><h1>DONATE</h1></center>
+<div class="content">
+<form method="post">
+	<center>
+	
+	
+	<table cellpadding="5px">
+		
+		<th colspan=2><div class="groove">
+            
+		</div>
+		</th>
+
+		<tr><td>
+			Name: <input type="Text" name="n1" placeholder="Enter your name">
+
+		</td></tr>
+		
+		<tr><td>
+			Contact no: <input type="number" name="n2" placeholder="Enter your mobile no">
+
+		</td></tr>
+			<tr><td>
+	         Donation types: <select><option>   </option><option>Below knee</option>
+              <option>Above knee</option><option>Leg with knee</option><option>Lower leg and foot</option><option>Arm and hand</option>
+
+	         </select>
+				</td></tr>
+
+			<tr>
+				<td>
+					Lifetime: <input type="radio" name="lifetime" value="0">Less than 5 yrs
+				</td> <td align="left"> <center>
+					<input type="radio" name="lifetime" value="1">More than 5 yrs
+				</center></td>
+			</tr>
+
+
+
+				<tr><td> Address:<center>
+				<tr><td colspan="2"> <textarea rows="7" cols="55"> </textarea></td></tr>
+				</center>
+			</td></tr>
+			
+			<tr><td> Precautions:<center>
+				<tr><td colspan="2"> <textarea rows="6" cols="55"> </textarea></td></tr>
+				</center>
+			</td></tr>
+			
+			<tr><td colspan="2" align="center">
+				<input type="Submit" name="Submit">
+				
+
+			</td></tr>
+       </table>
+        </center>
+        
+    </form>
+    <div class="foot"><a href="home.html"><img src="../resource/images/logoblack.png"></a></div>
+  </div>
+</body>
+</html>
+
